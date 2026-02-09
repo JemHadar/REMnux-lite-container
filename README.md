@@ -115,19 +115,21 @@ mkdir -p ~/malware-lab
 
 	podman build -t localhost/remnux-lite:arm64 .
 
-
 ### Step 5: Run it safely
 
-	podman run -it --rm \
+```bash
+podman run -it --rm \
   --read-only \
   --cap-drop=ALL \
   --security-opt=no-new-privileges \
   -v ~/malware-lab:/analysis:Z \
   remnux-lite:arm64
 
-  For stricter controls and hardening you can use:
 
-  podman run -it --rm \
+For stricter controls and hardening you can use:
+
+```bash
+podman run -it --rm \
   --read-only \
   --cap-drop=ALL \
   --security-opt=no-new-privileges \
@@ -137,6 +139,12 @@ mkdir -p ~/malware-lab
   -v ~/malware-lab:/analysis:ro,Z \
   localhost/remnux-lite:arm64
 
+
+### Optional: add a short safety note (recommended for credibility)
+
+```markdown
+> ⚠️ **Security note**:  
+> This container is executed with a read-only filesystem, dropped Linux capabilities, and no privilege escalation to reduce host risk when analyzing malicious artifacts.
 
 #### This will create a read-only filesystem along with:
 
