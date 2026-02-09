@@ -162,11 +162,11 @@ Container (REMnux-lite)
     └── notes.txt
 ```
 
-> **Security note**  
-> The container is executed with a read-only root filesystem. Only the `/analysis` directory is writable and intentionally exposed for controlled malware examination.
+ **Security note**  
+The container is executed with a read-only root filesystem. Only the `/analysis` directory is writable and intentionally exposed for controlled malware examination.
 
-> `~/malware-lab` (host) → `/analysis` (container)  
-> Files placed in the host directory become immediately available inside the container for analysis.
+`~/malware-lab` (host) → `/analysis` (container)  
+Files placed in the host directory become immediately available inside the container for analysis.
 
 
 
