@@ -128,7 +128,6 @@ podman run -it --rm \
 
 For stricter controls and hardening you can use:
 
-```bash
 podman run -it --rm \
   --read-only \
   --cap-drop=ALL \
@@ -139,10 +138,6 @@ podman run -it --rm \
   -v ~/malware-lab:/analysis:ro,Z \
   localhost/remnux-lite:arm64
 
-
-```markdown
-> ⚠️ **Security note**:  
-> This container is executed with a read-only filesystem, dropped Linux capabilities, and no privilege escalation to reduce host risk when analyzing malicious artifacts.
 
 #### This will create a read-only filesystem along with:
 
