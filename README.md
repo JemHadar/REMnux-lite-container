@@ -39,9 +39,8 @@ This led to a REMnux-lite container—built intentionally, not dogmatically.
 
 This wasn’t a compromise—it was a design decision.
 
-#### Why Containers Still Matter (Even When VMs Are Better)
+## Why Containers Still Matter (Even When VMs Are Better)
 
-Let me be clear:
 A container will never fully replace a REMnux VM. And it shouldn’t.
 
 But containers excel at things VMs are bad at:
@@ -66,7 +65,7 @@ VMs handle:
 * Detonation
 * x86-only tooling
 
-#### Security Posture: Containers Are Not a Sandbox by Default
+## Security Posture: Containers Are Not a Sandbox by Default
 
 A container is not automatically safe.
 
@@ -80,7 +79,7 @@ My analysis containers run with:
 
 If you’re going to analyze malware in containers, you need to treat them as controlled execution environments, not magic boxes.
 
-#### Follow the instructions below to install and configure PODMAN Desktop
+## Install and configure PODMAN Desktop
 
 ### Step 1:
 
