@@ -140,8 +140,6 @@ podman run -it --rm \
   localhost/remnux-lite:arm64
 
 
-### Optional: add a short safety note (recommended for credibility)
-
 ```markdown
 > ⚠️ **Security note**:  
 > This container is executed with a read-only filesystem, dropped Linux capabilities, and no privilege escalation to reduce host risk when analyzing malicious artifacts.
