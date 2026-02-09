@@ -71,7 +71,7 @@ VMs handle:
 A container is not automatically safe.
 
 My analysis containers run with:
-* --read-only filesystem
+* read-only filesystem
 * All Linux capabilities dropped
 * No new privileges
 * Explicit resource limits
