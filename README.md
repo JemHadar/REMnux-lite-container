@@ -148,8 +148,25 @@ podman run -it --rm \
 * Controlled networking
 * Read-only sample mounts
 
+### 📂 Volume Mapping
 
-NOTE: -v ~/malware-lab:/analysis is mapping local folder ~/malware-lab to the analysis folder of the container. Essentially, files to be analyzed will now be in the container for you to see and analyze.
+Host (macOS / Linux)
+└── ~/malware-lab
+├── sample.exe
+└── notes.txt
+↓
+Container (REMnux-lite)
+└── /analysis
+├── sample.exe
+└── notes.txt
+
+> **Security note**  
+> The container is executed with a read-only root filesystem. Only the `/analysis` directory is writable and intentionally exposed for controlled malware examination.
+
+> `~/malware-lab` (host) → `/analysis` (container)  
+> Files placed in the host directory become immediately available inside the container for analysis.
+
+
 
 
 
