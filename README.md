@@ -150,15 +150,17 @@ podman run -it --rm \
 
 ### 📂 Volume Mapping
 
+```text
 Host (macOS / Linux)
 └── ~/malware-lab
-├── sample.exe
-└── notes.txt
-↓
+    ├── sample.exe
+    └── notes.txt
+            ↓
 Container (REMnux-lite)
 └── /analysis
-├── sample.exe
-└── notes.txt
+    ├── sample.exe
+    └── notes.txt
+```
 
 > **Security note**  
 > The container is executed with a read-only root filesystem. Only the `/analysis` directory is writable and intentionally exposed for controlled malware examination.
