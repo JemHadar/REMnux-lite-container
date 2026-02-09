@@ -108,7 +108,11 @@ mkdir -p ~/malware-lab
 
 	mkdir remnux-container;cd remnux-container
 
-### Step 3: Create the Containerfile (already created Dockerfile)
+### Step 3: Create REMnux container directory and add the provided Dockerfile
+
+```bash
+mkdir remnux-container
+```
 
 
 ### Step 4: Build the Image
