@@ -124,10 +124,11 @@ podman run -it --rm \
   --security-opt=no-new-privileges \
   -v ~/malware-lab:/analysis:Z \
   remnux-lite:arm64
+```
 
+### Optional: For stricter controls and hardening you can use:
 
-For stricter controls and hardening you can use:
-
+```baseh
 podman run -it --rm \
   --read-only \
   --cap-drop=ALL \
@@ -137,7 +138,7 @@ podman run -it --rm \
   --network=slirp4netns \
   -v ~/malware-lab:/analysis:ro,Z \
   localhost/remnux-lite:arm64
-
+```
 
 #### This will create a read-only filesystem along with:
 
