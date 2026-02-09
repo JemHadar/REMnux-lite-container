@@ -80,7 +80,9 @@ My analysis containers run with:
 
 If you’re going to analyze malware in containers, you need to treat them as controlled execution environments, not magic boxes.
 
-## Install and configure PODMAN Desktop
+## Install and configure Container
+
+### Install Podman desktop https://podman-desktop.io
 
 ### Step 1:
 
