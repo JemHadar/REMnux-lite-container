@@ -1,4 +1,5 @@
 #### The focus on this lite container is on what analysts use most of the time for static analysis.
+The solution wasn’t Rosetta, emulation, or hacks—it was to use the Python implementation, which works cleanly on ARM and is often sufficient for triage.
 
 # REMnux-lite container
 The Shift: From “REMnux-in-a-Container” to “REMnux-Style Containers”
