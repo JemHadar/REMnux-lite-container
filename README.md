@@ -24,6 +24,7 @@ This led to a REMnux-lite container—built intentionally, not dogmatically.
 * flare-floss (Python version, not the x86 binary)
 * yara-python
 * capstone
+* Didier's Tools
 * vivisect
 
 #### Core system tools:
