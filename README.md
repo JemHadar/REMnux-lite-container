@@ -156,6 +156,7 @@ podman run -it --rm \
 * Uses read-only filesystem
 * Mounts host samples read-only
 * Uses safer user-mode networking
+* No direct access to host network interfaces (allows outbound connections; full isolation use --network=none)
 
 For static analysis, this is a very solid hardened configuration.
 
