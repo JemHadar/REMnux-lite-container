@@ -148,11 +148,16 @@ podman run -it --rm \
 
 #### This will create a read-only filesystem along with:
 
-* All Linux capabilities dropped
-* No new privileges
-* Explicit resource limits
-* Controlled networking
-* Read-only sample mounts
+* Runs interactively
+* Leaves no container artifacts
+* Drops all Linux capabilities
+* Prevents privilege escalation
+* Limits memory and processes
+* Uses read-only filesystem
+* Mounts host samples read-only
+* Uses safer user-mode networking
+
+For static analysis, this is a very solid hardened configuration.
 
 ### 📂 Volume Mapping
 
