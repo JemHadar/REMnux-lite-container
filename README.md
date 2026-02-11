@@ -83,7 +83,7 @@ If you’re going to analyze malware in containers, you need to treat them as co
 
 ## Install and configure Container
 
-### Install Podman desktop https://podman-desktop.io
+### Prerequisite: Install Podman desktop https://podman-desktop.io
 
 ### Step 1:
 
@@ -117,7 +117,6 @@ mkdir -p ~/malware-lab
 cp Dockerfile remnux-container
 ```
 
-
 ### Step 4: Build the Image
 
 	podman build -t localhost/remnux-lite:arm64 .
@@ -135,7 +134,7 @@ podman run -it --rm \
 
 ### Optional: For stricter controls and hardening you can use:
 
-```baseh
+```bash
 podman run -it --rm \
   --read-only \
   --cap-drop=ALL \
